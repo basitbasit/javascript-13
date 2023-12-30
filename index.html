@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  h3{
+    color: blueviolet;
+  }
+  h1{
+    color: rgb(54, 52, 52);
+  }
+</style>
+<body>
+  <script>
+    document.write("<h1>"+"Q1"+"Write a program that displays current date and time  in your browser"+"</h1>")
+           var now = new Date()
+          document.write("<h3>"+now+"</h3>");
+   document.write("<h1>"+"Q2"+"Write a program that alerts the current month in words.For example December.")
+          var now = new Date()
+          var month = now.getMonth()
+          var tol = ["january","februrary","march","april","may","june","july","agust","september","october","november","december"]
+   
+         document.write("<h3>"+tol[month]+"</h3>");
+    document.write("<h1>"+"Q 3"+" Write a program that displays a message “It’s Fun day” if its Saturday or Sunday today."+"<h1>")
+
+     var month = ["jan","feb","mar","apr","may","jun","jul","agu","sep","nov","dec"]
+     var cnt = new Date()
+     var today = month[cnt.getDay]
+     if(today  = "sat "|| today == "sun"){
+      document.write("<h3>"+" its is funday "+"</h3>");
+}
+else{
+ document.write("please correct answer")
+}
+document.write("<h1>"+"question 4 "+"</h1>")
+    var count = prompt("enter your number")
+    var smi  = count[new Date()]
+    if (count <= 15){
+      document.write("<h3>"+"start days of the month")
+  
+    }  
+    else if( now>15){
+      document.write("<h3>"+"Last days of the month")
+    }
+    document.write("<h1>"+"Q5"+" Write a program that determines the minutes since midnight, Jan. 1, 1970 and assigns it to a variable that hasn't been declared beforehand. Use any variable you like t been declared beforehand. Use any variable to represent the Date object"+"</h2>")
+     var since = new Date()
+    var tot = since/1000;
+    var cnt = since/1000*60
+    document.write("<h3>"+tot+"</h3>");
+    document.write("<br>")
+    document.write(cnt);
+document.write("Q6"+"Write a program that tests whether is's before noon and alert “Its AM” else “its PM”.")
+document.write("<br>")
+    var am = new Date()
+    var pm = am.toLocaleString()
+    if(pm === am){
+     document.write("<h3>"+"its pm"+"</h3>");
+    }
+    else{
+     document.write("<h3>"+"its am"+"</h3>")
+    }
+document.write("<h1>"+"Q7Write a program that creates a Date object for the last dayof the last month of 2020 and assigns it to variable namedlaterDate.")
+document.write("<br>")
+    var las = new Date()
+    var ths = new Date(" dec 31 ,2023")
+    var c = las - ths
+   document.write("<h3>"+ths+Math.floor(c/(1000*60*60*24)));
+
+    document.write("<h1>"+"Q8"+" Create a date object of the starting date of this Ramadanand alert the number of days past since 1st Ramadan?")
+document.write("<br>") 
+ var ramzan = new Date()
+ var firstRamzan = new Date("june 17,2024")
+ var total = ramzan-firstRamzan
+document.write("<h3>"+Math.floor(total/(1000*60*60*24)));
+
+ document.write("<h1>"+"Q9"+"Write a program that displays in your browser theseconds that elapsed between the reference date and the beginninng of 2024")
+
+document.write("<br>") 
+var date = new Date()
+var mil = new Date("jan 1 ,2023")
+document.write(mil);
+var total = mil - date
+document.write("<h3>"+Math.floor(total/(1000*60)));
+
+document.write("<h1>"+"Q10"+"Create a Date object for the current date and time.Extract the hours, reset the date object an hour ahead and finally display the date object in your browser")
+
+
+document.write("<br>")
+var ne = new Date()
+var sm = new Date("dec 15 ,2023")
+var mins = ne.getMinutes()
+var msToday = sm.getMinutes()
+var tr = mins -msToday
+var total = tr/(1000*60*60)
+document.write("<h3>"+Math.floor(total));
+
+
+document.write("<h1>"+"Q10"+"Write a program that creates a date object and show the date in an alert box that is reset to 100 years back?")
+
+document.write("<br>")
+var our = new Date()
+var sin = new Date("dec 12,1924")
+
+var total = sin-our
+document.write("<h3>"+Math.floor(total/(1000*60*60*24)/365) + sin);
+
+document.write("<h1>"+"Q11"+"Write a program to ask the user about his age. Calculateand show his birth year in your browser.")
+
+document.write("<br>")  
+var age = new Date(prompt("Enter Your Birthday year "))
+var tod = new Date()
+var total = tod -age
+document.write("<h3>"+Math.floor(total/(1000*60*60*24)/365.25));
+
+document.write("<h1>"+"Q12"+"Write a program to generate your K-Electric bill in your browser. All the amounts should be rounded off to 2 decimal places. Display the following fields:")
+
+
+document.write("<br>")
+var name = prompt("enter your name")
+document.write("<h3>"+name);
+  var union = prompt("enter your units")
+var unit = 16 
+var total = unit*union
+document.write(total);
+var afterOfDate = 350
+var now = new Date()
+if(now > new Date("dec 31, 2023")){
+document.write("<h3>"+total +"<br>"+ afterOfDate);
+}
+
+  </script>
+</body>
+</htm
